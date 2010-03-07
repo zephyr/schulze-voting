@@ -1,0 +1,7 @@
+T1 Variante I (Aleχ)
+T2 Variante II (Peter)
+T3 Variante III (Aleχ))
+T4 Variante IV (Martin)
+T5 Variante V (Florian)
+T6 Variante VI (Aleχ)
+T7 Variante VII (Martin, von Peter abgewandelt)

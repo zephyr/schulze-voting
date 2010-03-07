@@ -1,0 +1,23 @@
+N01 Altvariante „Neo2-RC1“
+N02 Hauptvariante „WASD-Konservativ“
+N03 Hauptvariante „WASD-Stephan-a“
+N04 Hauptvariante „Nora“
+N05 Variante „Vi“
+N06 Variante „WASD-2-Erik“
+N07 Variante „LEIA-alt“
+N08 Variante „LEIA-getauscht“
+N09 Variante „LEIA-x3“
+N10 Variante „LEIA-x3-vi“
+N12 Variante „WASD-2“
+N13 Variante „WASD-Stephan-b“
+N14 Variante „berniyh“
+N16 Variante „Vi-Stephan“
+N17 Variante „Vi-z“
+N18 Variante „Vi-Miche“
+N19 Variante „Blockout-korrigiert“
+N20 Variante „Quadrat“
+N21 Variante „Merk“
+N22 Variante „leia-xeno“
+N23 Variante „Neo RC1 verbessert“
+N24 Variante „errt“
+N25 Variante „LEIA-guru“

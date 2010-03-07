@@ -247,11 +247,12 @@ public class Election {
 				f.format("%s%n", priority);
 			}
 
-			f.format("Resulting duel duelMatrix:%n%s%n", voteMatrices.get(p));
+			f.format("Resulting duel duelMatrix:%n%s%n",
+          voteMatrices.get(p).toStringWith(inCandidates));
 		}
-		f.format("Final duel Matrix:%n%s", duelMatrix);
+		f.format("Final duel Matrix:%n%s", duelMatrix.toStringWith(inCandidates));
 		f.format("Condorcet winner:  %s%n%n", calculateCondorcetWinner());
-		f.format("Strongest path Matrix:%n%s", pathMatrix);
+		f.format("Strongest path Matrix:%n%s", pathMatrix.toStringWith(inCandidates));
 		f.format("Potential winners: %s%n%n", calculatePotentialWinners());
 
 		f.close();

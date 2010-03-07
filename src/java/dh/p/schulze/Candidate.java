@@ -24,6 +24,10 @@ public class Candidate {
 	public String niceToString() {
 		return String.format("%s (Nr.: %d)", name, externalId);
 	}
+  
+	public String niceAndShort() {
+		return String.format("V%02d", externalId);
+	}
 
 	public int hashCode() {
 		return this.internalId;

@@ -1,0 +1,83 @@
+<project name="schulze" default="dist" basedir=".">
+  
+  <description>
+  simple build file for the schulze voting program.
+  </description>
+  
+  <!-- program specific properties -->
+  
+  <property name="p.main" value="dh.p.schulze.Election"/>
+  
+  <!-- set global directory properties for this build -->
+  
+  <property name="src" location="src"/>
+  <property name="jva" location="${src}/java"/>
+  <property name="res" location="${src}/data"/>
+  
+  <property name="out" location="out"/>
+  <property name="bin" location="${out}/bin"/>
+  <property name="api" location="${out}/api"/>
+  <property name="jar" location="${out}/schulze.jar"/>
+  
+  <!-- The tasks -->
+  
+  <target name="clean" description="clean up the output directories">
+    <delete dir="${out}"/>
+  </target>
+  
+  <target name="init" depends="clean" description="create the output directories">
+    <mkdir dir="${out}"/>
+    <mkdir dir="${bin}"/>
+    <mkdir dir="${api}"/>
+  </target>
+  
+  <target name="normalize" depends="init" description="ensure linux file endings">
+    <fixcrlf srcdir="${src}" includes="**/*.java" encoding="UTF-8" eol="lf" eof="remove"/>
+    <fixcrlf srcdir="${res}" includes="**/*.txt" encoding="UTF-8" eol="lf" eof="remove"/>
+  </target>
+  
+  <target name="compile" depends="init, normalize" description="compile the source">
+    <javac srcdir="${jva}" destdir="${bin}" encoding="UTF-8" includeAntRuntime="false">
+      <compilerarg value="-Xlint"/> <!-- We want to see all warnings -->
+    </javac>
+    <copy todir="${bin}">
+      <fileset dir="${res}"/>
+    </copy>
+  </target>
+  
+  <target name="javadoc" depends="init" description="creates the deleloper javadoc">
+    <javadoc
+        sourcepath="${jva}" destdir="${api}"
+        private="true" author="true" version="true" use="true" linksource="yes"
+        encoding="UTF-8" docencoding="utf-8"
+        overview="${src}/overview.html"
+        windowtitle="Schulze voting API">
+      <doctitle><![CDATA[<h1>Schulze voting Developer API</h1>]]></doctitle>
+      <bottom><![CDATA[<h2>Licence</h2>
+<p>Copyright © 2009 Dennis Heidsiek</p>
+
+<p>This program is <em>free software</em>; you can redistribute it and/or modify it under the terms of the <strong>GNU General Public License</strong> as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License along with this program; if not, see <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/<a>.</p>]]></bottom>
+    </javadoc>
+    <!--
+      stylesheetfile=${res}/api/.css"
+      <link href="http://java.sun.com/j2se/1.6.0/docs/api/"/>
+      <link href="http://java.sun.com/j2se/1.6.0/docs/api/" offline="true" packagelistLoc="C:\tmp"/>
+      -->
+  </target>
+  
+  <target name="dist" depends="compile, javadoc" description="generate the distribution">
+    <!-- Pack the documentation -->
+    <tar destfile="${out}/api.tar.bz2" basedir="${api}" compression="bzip2"/>
+  </target>
+  
+  <target name="run" description="run the programm">
+    <java classname="${p.main}" dir="${bin}" fork="true">
+      <!-- <arg value="test"/> -->
+    </java>
+  </target>
+  
+</project>

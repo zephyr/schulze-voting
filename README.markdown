@@ -7,6 +7,8 @@
 
 This is a simple Java implementation of the [Schulze voting method](http://en.wikipedia.org/wiki/Schulze_method) voting system.
 
+If you are searching for a voting software with much more functionality, you should give [OpenSTV](http://www.openstv.org/) (Single Transferable Vote and Instant Runoff Voting Software) a try.
+
 
 ## Requirements
 

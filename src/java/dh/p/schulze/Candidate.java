@@ -1,10 +1,10 @@
 package dh.p.schulze;
 
-import java.util.HashMap;
+import java.util.TreeMap;
 import java.util.List;
 import java.util.Map;
 
-public class Candidate {
+public class Candidate implements Comparable<Candidate> {
 
 	private String name;
 	private int internalId;
@@ -32,9 +32,13 @@ public class Candidate {
 	public int hashCode() {
 		return this.internalId;
 	}
+  
+	public int compareTo(Candidate p) {
+		return this.getId() - p.getId();
+	}
 
 	public static Map<Integer, Candidate> fromFile(String file) {
-		Map<Integer, Candidate> map = new HashMap<Integer, Candidate>();
+		Map<Integer, Candidate> map = new TreeMap<Integer, Candidate>();
 		List<String> lines = DataInput.readLines(file);
 		int internalId = 0;
 

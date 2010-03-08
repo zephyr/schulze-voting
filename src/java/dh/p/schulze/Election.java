@@ -4,7 +4,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Formatter;
-import java.util.HashMap;
+import java.util.TreeMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
@@ -27,7 +27,7 @@ public class Election {
 		this.exCandidates = Candidate.fromFile("votes/" + electionName
 				+ ".Names.txt");
 
-		this.inCandidates = new HashMap<Integer, Candidate>();
+		this.inCandidates = new TreeMap<Integer, Candidate>();
 		for (Candidate c : exCandidates.values()) {
 			inCandidates.put(c.getId(), c);
 		}
@@ -58,8 +58,8 @@ public class Election {
 	}
 
 	protected void readVotesFromFile(String file) {
-		this.voteLists = new HashMap<Person, List<List<Candidate>>>();
-		this.voteMatrices = new HashMap<Person, Matrix>();
+		this.voteLists = new TreeMap<Person, List<List<Candidate>>>();
+		this.voteMatrices = new TreeMap<Person, Matrix>();
 
 		List<String> lines = DataInput.readLines(file);
 		for (String line : lines) {

@@ -54,7 +54,7 @@ public class Matrix {
 		Formatter f = new Formatter(sb);
     
     f.format("||  -> ||");
-    for(Candidate c : candidates.values()) {      
+    for(Candidate c : candidates.values()) {
 			f.format(" %s||", c.niceAndShort());
     }
     f.format("%n");

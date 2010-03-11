@@ -5,10 +5,17 @@
 
 ## Purpose
 
-This is a simple Java implementation of the [Schulze voting method](http://en.wikipedia.org/wiki/Schulze_method) voting system.
+This is a simple Java implementation of the Schulze voting system with a command-line interface.
 
-If you are searching for a voting software with much more functionality, you should give [OpenSTV](http://www.openstv.org/) (Single Transferable Vote and Instant Runoff Voting Software) a try.
+If you are searching for a voting software with much more functionality and a graphical user interface, you should give [OpenSTV](http://www.openstv.org/) (Single Transferable Vote and Instant Runoff Voting Software) a try.
 
+## Background
+You can get more Background information at various sources:
+
+*   [Schulze voting method](http://en.wikipedia.org/wiki/Schulze_method) at Wikipedia,
+*   [A Survey of Basic Voting Methods](http://fc.antioch.edu/~james_green-armytage/vm/survey.htm) by James Green-Armytage,
+*   [Condorcet method](http://wiki.electorama.com/wiki/Condorcet_method) and more specific [Schulze method](http://wiki.electorama.com/wiki/Schulze_method) at Electowiki,
+*   [Benutzerleitfaden für Wahlen und Abstimmungen nach dem Verfahren des Paarweisen Vergleichs](http://demokratieblog.wordpress.com/2009/12/13/benutzerleitfaden-fuer-wahlen-und-abstimmungen-nach-dem-verfahren-des-paarweisen-vergleichs/) by Demokratie von unten (in german).
 
 ## Requirements
 

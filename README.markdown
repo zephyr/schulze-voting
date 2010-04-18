@@ -1,7 +1,5 @@
 ﻿
-
 # schulze-voting
-
 
 ## Purpose
 
@@ -21,7 +19,6 @@ You can get more Background information at various sources:
 
 It has no further dependencies except for Java 6 or later.
 
-
 ## How to compile and execute
 
 If you have [Apache Ant](http://ant.apache.org/) installed, just type
@@ -33,7 +30,6 @@ to compile the source and
     ant run
 
 to execute the program.
-
 
 ## Licence
 

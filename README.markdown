@@ -9,7 +9,6 @@ If you are searching for a voting software with much more functionality and a gr
 
 ## Background
 You can get more Background information at various sources:
-
 *   [Schulze voting method](http://en.wikipedia.org/wiki/Schulze_method) at Wikipedia,
 *   [A Survey of Basic Voting Methods](http://fc.antioch.edu/~james_green-armytage/vm/survey.htm) by James Green-Armytage,
 *   [Condorcet method](http://wiki.electorama.com/wiki/Condorcet_method) and more specific [Schulze method](http://wiki.electorama.com/wiki/Schulze_method) at Electowiki,
@@ -33,7 +32,7 @@ to execute the program.
 
 ## Licence
 
-Copyright 2009 by [Dennis Heidsiek](http://www.google.com/profiles/Dennis.Heidsiek)
+Copyright 2010 by [Dennis Heidsiek](http://www.google.com/profiles/Dennis.Heidsiek)
 
 This program is free software: you can redistribute it and/or modify it under the terms of the [GNU General Public License](http://www.gnu.org/copyleft/gpl.html) as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 

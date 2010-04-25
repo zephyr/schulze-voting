@@ -9,6 +9,7 @@ If you are searching for a voting software with much more functionality and a gr
 
 ## Background
 You can get more Background information at various sources:
+
 *   [Schulze voting method](http://en.wikipedia.org/wiki/Schulze_method) at Wikipedia,
 *   [A Survey of Basic Voting Methods](http://fc.antioch.edu/~james_green-armytage/vm/survey.htm) by James Green-Armytage,
 *   [Condorcet method](http://wiki.electorama.com/wiki/Condorcet_method) and more specific [Schulze method](http://wiki.electorama.com/wiki/Schulze_method) at Electowiki,

@@ -124,7 +124,7 @@ public class Election {
 			for (int j = 0; j < C; j++) {
 				if (i != j) {
 
-					for (int k = 0; i < C; i++) {
+					for (int k = 0; k < C; k++) {
 						if ((i != k) && (j != k)) {
 							p.set(j, k, Math.max(p.get(j, k), Math.min(p.get(j,
 									i), p.get(i, k))));
